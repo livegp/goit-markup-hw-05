@@ -112,7 +112,7 @@ body {
   color: var(--color-active);
 }
 
-/* .active::after {
+.active::after {
   content: "";
   display: block;
   height: 4px;
@@ -120,7 +120,7 @@ body {
   background-color: var(--color-active);
   position: relative;
   bottom: -23px;
-} */
+}
 
 .address {
   display: flex;
@@ -489,7 +489,7 @@ body {
     0 2px 1px rgb(46 47 66 / 8%);
 }
 
-/* .work-image {
+.work-image {
   position: relative;
   overflow: hidden;
 }
@@ -512,9 +512,9 @@ body {
   transition: transform 250ms ease;
 }
 
-.work-image:hover .work-overlay {
+.work-link:hover .work-overlay {
   transform: translateX(0);
-} */
+}
 
 .work-link img {
   background:
