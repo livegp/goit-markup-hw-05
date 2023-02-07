@@ -72,8 +72,9 @@ body {
 .header .container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
+
+  /* flex-wrap: wrap; */
 }
 
 .nav-section .logo {
@@ -93,13 +94,11 @@ body {
 
 .nav {
   display: flex;
-  height: 100%;
   gap: 40px;
 }
 
 .nav-link {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
   letter-spacing: 0.02em;
   line-height: 1.5;
   font-weight: var(--font-medium);
@@ -116,10 +115,11 @@ body {
   content: "";
   display: block;
   height: 4px;
+  width: 100%;
   border-radius: 2px;
   background-color: var(--color-active);
-  position: relative;
-  bottom: -23px;
+  position: absolute;
+  bottom: 0;
 }
 
 .address {
