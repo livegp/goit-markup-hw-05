@@ -148,6 +148,7 @@ body {
     ) no-repeat center/1440px auto,
     url("../images/home/hero/people-office.jpg")
     no-repeat center/1440px auto var(--color-dark);
+  height: 600px;
   padding-top: 188px;
   padding-bottom: 188px;
 }
