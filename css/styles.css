@@ -73,8 +73,6 @@ body {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-
-  /* flex-wrap: wrap; */
 }
 
 .logo-header {
@@ -101,12 +99,12 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.active,
-.nav-link:is(:hover, :focus) {
+.nav-link:is(:hover, :focus),
+.nav-link-active {
   color: var(--color-active);
 }
 
-.active::after {
+.nav-link-active::after {
   position: absolute;
   bottom: -28px;
   content: "";
@@ -133,11 +131,6 @@ body {
 .address-link:is(:hover, :focus) {
   color: var(--color-active);
 }
-
-.active {
-  color: var(--color-active);
-}
-
 /* =============== HERO =============== */
 
 .hero {
@@ -402,7 +395,7 @@ body {
 .footer-social-list {
   display: flex;
   margin-top: 16px;
-  gap: 24px;
+  gap: 16px;
 }
 
 .footer-social-link {
@@ -544,7 +537,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(0, 100%);
+  transform: translate(0, 101%);
   display: block;
   background-color: var(--color-accent);
   height: 100%;
@@ -559,7 +552,7 @@ body {
 }
 
 .work-link:is(:hover, :focus) .work-overlay {
-  transform: translateX(0);
+  transform: translate(0);
 }
 
 .work-link img {
